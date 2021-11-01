@@ -18,14 +18,14 @@ public class HomeWork {
         animal.emittedSound = "РРРРРРРРРР";
 
 
-        System.out.println(people.seeAnimals() +" "+ animal.name.toLowerCase());
+        System.out.println(people.seeAnimals() + " " + animal.name.toLowerCase());
         System.out.println(people.danger());
         if (animal.danger) {
             System.out.println("Да");
         } else {
             System.out.println("Нет");
         }
-        System.out.println(people.sound()+" " + animal.emittedSound);
+        System.out.println(people.sound() + " " + animal.emittedSound);
 
     }
 }

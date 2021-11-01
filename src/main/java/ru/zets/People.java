@@ -6,7 +6,7 @@ public class People {
     int age;
 
 
-    public static String seeAnimals() {
+    public String seeAnimals() {
         return "А кто это?";
     }
 
