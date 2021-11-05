@@ -27,5 +27,8 @@ public class HomeWork {
         }
         System.out.println(people.sound() + " " + animal.emittedSound);
 
+        people.birthday();
+        System.out.println("С днем рождения сколько исполнилось лет? " + people.age);
+
     }
 }

@@ -5,6 +5,9 @@ public class People {
     String sex;
     int age;
 
+    public Integer birthday() {
+        return age++;
+    }
 
     public String seeAnimals() {
         return "А кто это?";
