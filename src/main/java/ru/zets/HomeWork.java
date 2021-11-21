@@ -2,33 +2,40 @@ package ru.zets;
 
 import ru.zets.Animals;
 
+import static ru.zets.Animals.angryAnimals;
+import static ru.zets.People.*;
+
+
 public class HomeWork {
 
     public static void main(String[] args) {
 
         People people = new People();
-        people.name = "Ivan";
-        people.age = 7;
-        people.sex = "male";
+        people.setName("Ivan");
+        people.setAge(7);
+        people.setSex("male");
+
 
         Animals animal = new Animals();
-        animal.kindOfAnimal = "Млекопитающие";
-        animal.name = "Медведь";
-        animal.danger = true;
-        animal.emittedSound = "РРРРРРРРРР";
+        animal.setKindOfAnimal("Млекопитающие");
+        animal.setName("Медведь");
+        animal.setDanger(true);
 
 
-        System.out.println(people.seeAnimals() + " " + animal.name.toLowerCase());
-        System.out.println(people.danger());
-        if (animal.danger) {
+        System.out.println(seeAnimals() + " " + animal.getName());
+        System.out.println(danger());
+        if (animal.getDanger()) {
             System.out.println("Да");
         } else {
             System.out.println("Нет");
         }
-        System.out.println(people.sound() + " " + animal.emittedSound);
+        //Если зверь опасен, его не будут провацировать и он не злится,
+        // а если зверь не опасен, то его будут провацировать и буддет, что то делать
+        System.out.println(animal.getName() + " " + angryAnimals(teaseAnimals(animal.getDanger())));
+
 
         people.birthday();
-        System.out.println("С днем рождения сколько исполнилось лет? " + people.age);
+        System.out.println("С днем рождения сколько исполнилось лет? " + people.getAge());
 
     }
 }
