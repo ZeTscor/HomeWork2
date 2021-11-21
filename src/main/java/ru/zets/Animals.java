@@ -1,7 +1,7 @@
 package ru.zets;
 
 public class Animals {
-
+    public static String commonName = "Животное";
     private String kindOfAnimal;
     private String name;
     private Boolean danger;

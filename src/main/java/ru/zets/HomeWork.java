@@ -17,27 +17,26 @@ public class HomeWork {
             people.setSex("male");
             people.birthday();
             System.out.println("С " + people.getAge() + " днем рождением. Мы идем в зоопарк");
-        }else {
-            System.out.println("Инопланетян не интересуют земные животные");
-        }
 
-        Animals animal = new Animals();
-        animal.setKindOfAnimal("Млекопитающие");
-        animal.setName("Медведь");
-        animal.setDanger(true);
+            Animals animal = new Animals();
+            animal.setKindOfAnimal("Млекопитающие");
+            animal.setName("Медведь");
+            animal.setDanger(true);
 
+            System.out.println(seeAnimals() + " " + animal.getName());
+            System.out.println(danger());
+            if (animal.getDanger()) {
+                System.out.println("Да");
+            } else {
+                System.out.println("Нет");
+            }
+            //Если зверь опасен, его не будут провацировать и он не злится,
+            // а если зверь не опасен, то его будут провацировать и буддет, что то делать
+            System.out.println(animal.getName() + " " + angryAnimals(teaseAnimals(animal.getDanger())));
 
-        System.out.println(seeAnimals() + " " + animal.getName());
-        System.out.println(danger());
-        if (animal.getDanger()) {
-            System.out.println("Да");
         } else {
-            System.out.println("Нет");
+            System.out.println(Animals.commonName + " " + angryAnimals(false));
         }
-        //Если зверь опасен, его не будут провацировать и он не злится,
-        // а если зверь не опасен, то его будут провацировать и буддет, что то делать
-        System.out.println(animal.getName() + " " + angryAnimals(teaseAnimals(animal.getDanger())));
-
 
 
     }
