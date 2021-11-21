@@ -1,6 +1,7 @@
 package ru.zets;
 
 public class Animals {
+
     private String kindOfAnimal;
     private String name;
     private Boolean danger;

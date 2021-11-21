@@ -10,11 +10,16 @@ public class HomeWork {
 
     public static void main(String[] args) {
 
-        People people = new People();
-        people.setName("Ivan");
-        people.setAge(7);
-        people.setSex("male");
-
+        if (commonName.equals("Человек")) {
+            People people = new People();
+            people.setName("Ivan");
+            people.setAge(7);
+            people.setSex("male");
+            people.birthday();
+            System.out.println("С " + people.getAge() + " днем рождением. Мы идем в зоопарк");
+        }else {
+            System.out.println("Инопланетян не интересуют земные животные");
+        }
 
         Animals animal = new Animals();
         animal.setKindOfAnimal("Млекопитающие");
@@ -34,8 +39,6 @@ public class HomeWork {
         System.out.println(animal.getName() + " " + angryAnimals(teaseAnimals(animal.getDanger())));
 
 
-        people.birthday();
-        System.out.println("С днем рождения сколько исполнилось лет? " + people.getAge());
 
     }
 }

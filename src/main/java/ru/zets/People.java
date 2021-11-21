@@ -2,6 +2,7 @@ package ru.zets;
 
 public class People {
 
+    public static String commonName = "Человек";
     private String sex;
     private int age;
     private String name;
