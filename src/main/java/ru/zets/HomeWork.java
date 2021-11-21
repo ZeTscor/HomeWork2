@@ -1,6 +1,5 @@
 package ru.zets;
 
-import ru.zets.Animals;
 
 import static ru.zets.Animals.angryAnimals;
 import static ru.zets.People.*;
